@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 20px;
+    margin: 50px;
+    background: #979A9A;
+    font-family: Laila light;  
+}
+
+
+nav{
+    background: #FFA07A ;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 130px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #9D8189;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #FFA07A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+
+/*EMPIZA LA PAGINA DE ANTES*/
+h1{
+font-size: 55px;
+font-family: Titulos Berkshire Swash;
+text-align-last: center;
+color: #ffffff;
+float: center;
+}
+.title {
+    font-family: Titulos Berkshire Swash
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    margin-top: 100px;
+    font-weight: 100;
+}
+ .container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px
+
+
+ }
+ .container .card{
+   width: 330px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background: #ffffff
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+.container .card img{
+
+    width: 330px;
+    height: 220px;
+    border-radius: 10px
+}
+
+.container .card h4{
+    font-size: 25px;
+    font-weight: 600px;
+    color: #000000
+
+
+}
+
+.container .card p{
+    padding: 0 lrem;
+    font-family: Laila light;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin:5px; 
+
+}
+
+.container .card a{
+    font-weight: 800px;
+    text-decoration: none;
+    color: #979A9A;;
+    font-family: Laila light;
+}
+/*PARTE DOS*/
+.imagen img{
+    border-radius: 15px;
+    width: 450px;
+    height: 450px;
+    margin-left: 130px;
+    float: left;
+}
+.contenedor{
+    width:  350%;
+    max-width: 1000px;
+    margin:  auto;
+    overflow: hidden;
+}
+div#general{
+    width: 500px;
+    height: 450px;
+    background-color: #FFE5D9  ;
+    float: right;
+    border-radius: 15px;
+    margin-right: 160px;
+
+}
+div#general h1{
+    font-family: Laila light;
+    color: #000000;
+    text-align: center;
+
+}
+div#general p{
+    font-size: 18px;
+    font-family:Laila light;
+    color: #000000;
+    text-align:  justify;
+    margin: 10px
+   
+}
+
+
+
+
+
+/*PARTE TRES */
+.demo-3 {
+    position:relative;
+    width:500px;
+    height:400px;
+    overflow:hidden;
+    float:right;
+    margin-right:80px
+
+
+
+
+}
+.demo-3 figure {
+    margin:0;
+    padding:40px;
+    position:center;
+    cursor:pointer;
+    margin-left:-50px
+    border-radius:10px;
+}
+.demo-3 figure img {
+    display:block;
+    position:relative;
+    z-index:10;
+    margin:-15px 0
+    padding: 20px
+     width:400px;
+    height:300px;
+    border-radius: 10px
+}
+.demo-3 figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+
+}
+.demo-3 figure h1 {
+    font-family:'Laila light';
+    color:#fff;
+    font-size:40px;
+    text-align:center;
+}
+.demo-3 figure p {
+    display:block;
+    font-family:'Laila light';
+    font-size:20px;
+    line-height:20px;
+    margin:0;
+    color:#fff;
+    text-align:center;
+}
+.demo-3 figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color:#ffffff
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+/*PIE DE PAGINA*//*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color:#FFA07A;
+    margin-top: 70%;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 130px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #9D8189;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #9D8189;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
