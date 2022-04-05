@@ -1,6 +1,6 @@
 @import url(all.css);
 @import url(bootstrap.css);
-header
+
 .Logo img{
     width: 180px;
     height: 180px;
@@ -8,107 +8,108 @@ header
     margin: top: 30px;
     margin-left: 10px;
 
-    }
-    *{
-      padding: 0;
-      margin: 0;
-      text-decoration: none;
-      list-style: none;
-      box-sizing: border-box;
-  }
-  body{
-      margin-top: 20px;
-      margin: 50px;
-      background: #979A9A;
-      font-family: Laila light;  
-  }
-  
-  
-  nav{
-      background: #FFA07A ;
-      height: 80px;
-      width: 100%;
-  }
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  margin-top: 20px;
+  margin: 50px;
+  background: #979A9A;
+  font-family: Laila light;  
+}
+
+
+nav{
+  background: #FFA07A ;
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo{
+  height: 130px;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+li a.active, li a:hover{
+  background: #9D8189;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
   .enlace{
-      position: absolute;
-      padding: 20px 50px;
-  }
-  .logo{
-      height: 130px;
-  
-  }
-  nav ul{
-      float: right;
-      margin-right: 20px;
-  }
-  nav ul li{
-      display: inline-block;
-      line-height: 80px;
-      margin: 0 5px;
+      padding-left: 20px;
   }
   nav ul li a{
-      color: #fff;
-      font-size: 25px;
-      padding: 7px 13px;
-      border-radius: 3px;
-      text-transform: uppercase;
+      font-size: 16px;
   }
-  li a.active, li a:hover{
-      background: #9D8189;
-      transition: .5s;
-  }
+}
+
+@media (max-width: 858px){
   .checkbtn{
-      font-size: 30px;
-      color: #fff;
-      float: right;
-      line-height: 80px;
-      margin-right: 40px;
-      cursor: pointer;
-      display: none;
+      display: block;
   }
-  #check{
-      display: none;
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
   }
-  
-  @media (max-width: 952px){
-      .enlace{
-          padding-left: 20px;
-      }
-      nav ul li a{
-          font-size: 16px;
-      }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
   }
-  
-  @media (max-width: 858px){
-      .checkbtn{
-          display: block;
-      }
-      ul{
-          position: fixed;
-          width: 100%;
-          height: 100vh;
-          background: #2c3e50;
-          top: 80px;
-          left: -100%;
-          text-align: center;
-          transition: all .5s;
-      }
-      nav ul li{
-          display: block;
-          margin: 50px 0;
-          line-height: 30px;
-      }
-      nav ul li a{
-          font-size: 20px;
-      }
-      li a:hover, li a.active{
-          background: none;
-          color: #FFA07A;
-      }
-      #check:checked ~ ul{
-          left:0;
-      }
+  nav ul li a{
+      font-size: 20px;
   }
+  li a:hover, li a.active{
+      background: none;
+      color: #FFA07A;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+
 
 
 
@@ -148,6 +149,7 @@ h1{
   form{
     padding: 10px;
     margin: auto;
+    
   }
   fieldset{
     padding: 40px;
@@ -545,79 +547,4 @@ td, th{
 
 
 
-
-
-
-
-
-
-
-
-
-/*PIE DE PAGINA
-.pie-pagina{
-    width: 100%;
-    background-color:#FFA07A;
-    margin-top: 90%;
-}
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 130px;
-}
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 25px;
-}
-.pie-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #9D8189;
-    text-align: center;
-    transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
-}
-.pie-pagina .grupo-2{
-    background-color: #9D8189;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-}
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}*/
 
