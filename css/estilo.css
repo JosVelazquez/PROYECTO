@@ -247,13 +247,13 @@ div#general p{
     padding: 60px;
     text-align: center;
     flex-grow: 1;
-    color: #343759;
+    background: #D8E2DC;
 }
 
 .tabla>h2{
     font-size:30px;
     margin-bottom:35px;
-    color: #fff;
+    color: #000;
 }
 
 .tabla img{
@@ -266,7 +266,7 @@ div#general p{
 .tabla > h3{
     font-size:30px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
 }
 
 .tabla > p{
@@ -289,7 +289,7 @@ div#general p{
 }
 
 .tabla:hover{
-     background: #343759;
+     background: #FFA07A ;
     color: #f1f1f2;
     transition: .5s all;
     transform: scale(1.1);
